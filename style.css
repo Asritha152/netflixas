@@ -1,0 +1,401 @@
+* {
+    padding: 0;
+    margin: 0;
+    
+}
+body{
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+    ;
+}
+
+.navbar {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: center;
+    justify-items: center;
+    position: relative;
+    z-index: 1;
+    padding-top: 10px;
+    box-sizing: border-box;
+   
+}
+
+.logo img {
+    background-color: red;
+    color: transparent;
+    background-clip: text;
+    width: 9.25rem;
+    height: 2.5rem;
+    z-index: 1;
+}
+
+
+.main {
+    background-image: url(background.jpg);
+    min-height: 70vh;
+    width: 100%;
+    background-repeat: none;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.main .set-opacity {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: .56;
+    position: absolute;
+    top: 0;
+
+}
+
+.main-headings {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-basis: 50%;
+    row-gap: 1rem;
+
+}
+
+.main-headings h1,
+h2,
+h3 {
+    color: rgb(255, 255, 255);
+    z-index: 1;
+    text-align: center;
+}
+
+.main-headings h1 {
+    font-size: 3rem;
+}
+
+.main-headings h2 {
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.main-headings h3 {
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+.input {
+    display: flex;
+    z-index: 1;
+    justify-content: center;
+    align-items: center;
+    
+}
+div .input{
+    width: 90%;
+}
+
+.input input {
+    background-color: rgba(0, 0, 0, 0.73);
+    color: white;
+    font-size: 1.2rem;
+    padding: 0.9rem;
+    border: none;
+    border-radius: 4px;
+    margin-right: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.625);
+   
+}
+
+
+.input input:focus {
+    border: 2px solid white;
+    outline: none;
+}
+
+
+.input button {
+    font-size: 1.5rem;
+    background-color: red;
+    border-radius: 4px;
+    padding: 0.9rem;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.right{
+    display: flex;
+    column-gap:1.5rem ;
+}
+.right select {
+    height: 2rem;
+   background: none;
+   color: white;
+   background-color: rgba(0, 0, 0, 0.418);
+   border-radius: 5px;
+   padding: 0px 15px;
+}
+.right select option{
+    background-color: white;
+    color: black;
+}
+.right select:focus{
+    border: 2px solid white;
+    outline: none;
+}
+.right  button{
+height: 2rem;
+padding: 0px 15px;
+
+color: white;
+background-color: red;
+font-size: .9rem;
+border-radius: 5px;
+border: none;
+
+}
+.separation{
+   border-bottom: .5rem solid gray;
+   
+}
+ button{
+    cursor: pointer;
+
+}
+button:hover{
+    background-color: rgba(255, 0, 0, 0.759);
+}
+section{
+    padding: 0px 72px;
+    min-height: 60vh;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section .content,section .picture{
+    flex: 1;}
+section .content h2,h3{
+    text-align: left;
+}
+section .content h2 {
+    font-size: 3rem;
+    
+}
+section .content h3{
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+.first .picture,.third .picture{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    height: 100%;
+
+}
+.first .picture .image,.third .picture .image{
+    position:relative;
+    
+}
+.first .picture .image img,.third .picture .image img{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    z-index: 10;
+
+}
+.first .picture .image .video {
+    position: absolute;
+    left: 80px;
+    top: 90px;
+    overflow: hidden;
+    width: 75%;
+    height: 55%;
+    margin: auto;}
+.first .video video{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    overflow: hidden;
+
+}
+.second .picture{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.second .picture{
+    width: 100%;
+}
+.second .picture .image{
+    width: 100%;
+}
+.second .image img{
+    width: 100%;
+}
+.boxshot{
+    width: 50%;
+    margin:auto ;
+    border: 1px solid rgba(255, 255, 255, 0.548);
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    position: absolute;
+    bottom: 10px;
+    padding: .2rem 0;
+    border-radius: .75rem;
+    margin-bottom: 0rem;
+    background-color: black;
+    box-shadow: 2px 2px solid black ;
+   
+
+}
+.boxshot .text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.text .download{
+    color: rgba(0, 140, 255, 0.615);
+}
+.boxshot img{
+    max-height: 4rem;
+}
+.third .picture .image .video {
+    position: absolute;
+    left: 100px;
+    top: 24px;
+    overflow: hidden;
+    width: 65%;
+    height: 55%;
+    margin: auto;}
+.first .video video{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    overflow: hidden;
+
+}
+div.faq{
+    min-height: 100vh;
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 1.8rem;
+    box-sizing: border-box;
+}
+.faq h1{
+    font-size: 3rem;
+    text-align: center;
+}
+.faq .questions{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: .5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    box-sizing: border-box;
+
+}
+.questions div{
+    width: 75%;
+    display: flex;
+    background-color: rgb(70, 68, 68);
+    justify-content: space-between;
+    padding: 1.8rem;
+    
+}
+.questions {
+    font-size: 1.5rem;
+}
+.faq .text h3{
+    font-size: 1.4rem;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+footer{
+    min-height: 60vh;
+    width: 100%;
+    background-color: black;
+    color: rgb(180, 176, 176);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: .875rem;
+    font-weight: 400;
+    row-gap: 1rem;
+    column-gap: 1rem;
+    padding: 6rem;
+    box-sizing: border-box;
+}
+.footer{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    row-gap: 1rem;
+    align-content: center;
+    justify-content: center;
+}
+a{
+    color: rgb(180, 176, 176);
+}
+@media screen and (max-width:1200px){
+    section{
+        padding: 1rem;
+        box-sizing: border-box;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+    .second{
+        flex-direction: column-reverse;
+    }
+    section .content h2,section .content h3{
+        text-align: center;
+        padding: 0rem;
+    }
+}
+@media screen and (max-width:960px)
+{
+    .footer{
+        grid-template-columns: repeat(2,1fr);
+
+    }
+}
+@media screen and (max-width:600px)
+{
+    .input{
+        flex-direction: column;
+        row-gap: .5rem;
+    }
+    .input input{
+        width: 100%;
+    }
+    footer{
+        padding: 2rem;
+    }
+    .right  button{
+        height: 2rem;
+        padding: 0px 10px;
+        
+        color: white;
+        background-color: red;
+        font-size: .7rem;
+        border-radius: 5px;
+        border: none;
+        
+        }
+    
+}
+
+
+
